@@ -26,9 +26,7 @@ export class HeroesComponent implements OnInit {
 
   deleteHero(key: string){
     this.heroesService.deleteHero(key).subscribe(data =>{
-      console.log(data);
       if(data){
-        console.error(data);
       }
       else{
         delete this.heroes[key];

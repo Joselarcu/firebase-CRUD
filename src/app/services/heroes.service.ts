@@ -18,7 +18,6 @@ export class HeroesService {
 
     return this.http.post(this.heroesUrl+ '.json', body, { headers: headers })
       .map(res => {
-        console.log(res.json());
         return res.json();
       }
       );
@@ -33,7 +32,6 @@ export class HeroesService {
 
     return this.http.put(url, body, { headers: headers })
       .map(res => {
-        console.log(res.json());
         return res.json();
       }
       );
